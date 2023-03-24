@@ -1,5 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script:wght@500&family=Edu+NSW+ACT+Foundation:wght@400;500&family=Golos+Text:wght@400;700&family=Lilita+One&display=swap');
 
+/* 
+    Imported fonts: 
+        * Confortaa (Regular)
+        * Dancing Script (500)
+        * Edu NSW Act Foundation (400, 500)
+        * Golos Text (400, 700)
+        * Lilita One (Regular)
+    
+    Default styling: 
+        - Cr for: paragraphs
+        - DS 500 for: 
+        - ENAF 400 for: 
+        - ENAF 500 for: 
+        - GT 400 for: tags, prequels
+        - GT 700 for: contrast
+        - LOr for: titles
+ */
+
 body {
     overflow-y: hidden; overflow-x: hidden;
+}
+
+header, .divider {
+    width: 100vw; height: 100vh;
+}
+
+header {
+    background-color: rgba(52, 126, 236, 0.7);
+}
+
+#father__profile { position: relative; }
+
+#profile {
+    min-width: 150px; min-height: 112.5px;
+    max-width: 300px; max-height: 225px;
+    margin-top: 32vh !important;
+    margin: 0 auto;
+    float: left;
+}
+
+/* Animação que deu errado! */
+/* .rotate {
+    animation-duration: 1s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+        width: 100%; height: 100%;
+    }
+
+    50% {
+        transform: rotate(180);
+        width: 150%; height: 150%;
+    }
+
+    100% {
+        transform: rotate(360);
+        width: 100%; height: 100%;
+    }
+} */
+
+/* div.row { width: 95% !important; } */
+
+.speak { margin-top: 25vh; float: left; }
+
+.prequel {
+    font-family: 'Golos Text';
+    font-size: 16pt;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    font-family: 'Lilita One';
+
+}
+
+.tags {
+    font-family: 'Golos Text';
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+p {
+    font-family: 'Confortaa';
+    font-size: 15pt;
+    text-align: justify;
+}
+
+div.buttons {
+    position: relative;
+    /* width: 20vw; height:12vh; */
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+a img {
+    width: 51.2px; height: 51.2px;
+}
+
+.next-btn, .prev-btn {
+    width: 20vw; height: 12vh;
+    background-color: yellow;
 }
