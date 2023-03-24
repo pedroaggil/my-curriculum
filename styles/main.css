@@ -19,8 +19,19 @@
  */
 
 body {
-    overflow-y: hidden; overflow-x: hidden;
+    overflow-x: hidden;
 }
+
+/* Barra de rolagem */
+body::-webkit-scrollbar { width: 12px; } /* Largura */
+
+	body::-webkit-scrollbar-track { background-color: rgba(167, 167, 167, 0.4); } /* Cor de destaque de fundo */
+
+	body::-webkit-scrollbar-thumb { /* Cor da barra em si */
+	background-color: #444;
+	border-radius: 10px;
+	border: 2px solid #a7a7a7;
+	}
 
 header, .divider {
     width: 100vw; height: 100vh;
@@ -28,6 +39,30 @@ header, .divider {
 
 header {
     background-color: rgba(52, 126, 236, 0.7);
+}
+
+.about {
+    background-color: aqua;
+}
+
+.contact {
+    background-color: burlywood;
+}
+
+.formation {
+    background-color: coral;
+}
+
+.volunteering {
+    background-color: darkkhaki;
+}
+
+.xp {
+    background-color: lightyellow;
+}
+
+.curses {
+    background-color: peru;
 }
 
 #father__profile { position: relative; }
@@ -86,6 +121,7 @@ h1 {
     font-family: 'Golos Text';
     font-weight: 400;
     font-size: 16pt;
+    font-style: italic;
 }
 
 p {
@@ -94,20 +130,4 @@ p {
     text-align: justify;
 }
 
-div.buttons {
-    position: relative;
-    /* width: 20vw; height:12vh; */
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-}
-
-a img {
-    width: 51.2px; height: 51.2px;
-}
-
-.next-btn, .prev-btn {
-    width: 20vw; height: 12vh;
-    background-color: yellow;
-}
+a img { width: 51.2px; height: 51.2px; }
